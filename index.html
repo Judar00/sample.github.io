@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marci Metzger Homes | Premium Real Estate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-home"></i>
+                    <span>Marci Metzger Homes</span>
+                </a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="btn btn-outline">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Dream Home Today</h1>
+                <p>Discover the perfect property that matches your lifestyle and budget from our extensive collection.</p>
+                <a href="#" class="btn">Browse Properties</a>
+
+                <div class="search-box">
+                    <h3>Search Properties</h3>
+                    <form class="search-form">
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select id="location" class="form-control">
+                                <option value="">Any Location</option>
+                                <option value="new-york">New York</option>
+                                <option value="los-angeles">Los Angeles</option>
+                                <option value="chicago">Chicago</option>
+                                <option value="miami">Miami</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Property Type</label>
+                            <select id="type" class="form-control">
+                                <option value="">Any Type</option>
+                                <option value="house">House</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="villa">Villa</option>
+                                <option value="condo">Condo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price Range</label>
+                            <select id="price" class="form-control">
+                                <option value="">Any Price</option>
+                                <option value="0-500000">$0 - $500,000</option>
+                                <option value="500000-1000000">$500,000 - $1M</option>
+                                <option value="1000000-2000000">$1M - $2M</option>
+                                <option value="2000000+">$2M+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <button type="submit" class="btn form-control">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Properties</h2>
+                <p>Explore our handpicked selection of premium properties that offer the perfect blend of luxury and comfort.</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="house">Houses</button>
+                <button class="filter-btn" data-filter="apartment">Apartments</button>
+                <button class="filter-btn" data-filter="villa">Villas</button>
+                <button class="filter-btn" data-filter="condo">Condos</button>
+            </div>
+
+            <div class="properties" id="properties-container">
+                <!-- Properties will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from our satisfied clients about their experience working with us to find their dream homes.</p>
+            </div>
+
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The team at Marci Metzger Homes made the entire home buying process seamless. They understood exactly what we were looking for and found us the perfect home within our budget."</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"As a first-time home buyer, I was nervous about the process. My agent was patient, knowledgeable, and guided me through every step. Couldn't be happier with my new condo!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>First-time Buyer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"We needed to sell our family home quickly due to a relocation. Marci Metzger Homes marketed it perfectly and we had multiple offers above asking price within a week!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="The Williams Family">
+                        </div>
+                        <div class="author-info">
+                            <h4>The Williams Family</h4>
+                            <p>Sellers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Agents -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Expert Agents</h2>
+                <p>Meet our team of dedicated real estate professionals committed to helping you find or sell your property.</p>
+            </div>
+
+            <div class="agents-container">
+                <div class="agent-card">
+                    <div class="agent-img">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="David Miller">
+                    </div>
+                    <div class="agent-info">
+                        <h3 class="agent-name">David Miller</h3>
+                        <p class="agent-title">Senior Real Estate Agent</p>
+                        <p>With over 15 years of experience, David specializes in luxury waterfront properties.</p>
+                        <div class="agent-contact">
+                            <a href="#"><i class="fas fa-phone"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-img">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Jennifer Lee">
+                    </div>
+                    <div class="agent-info">
+                        <h3 class="agent-name">Jennifer Lee</h3>
+                        <p class="agent-title">Commercial Specialist</p>
+                        <p>Jennifer has helped numerous businesses find their perfect commercial spaces.</p>
+                        <div class="agent-contact">
+                            <a href="#"><i class="fas fa-phone"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-img">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Robert Garcia">
+                    </div>
+                    <div class="agent-info">
+                        <h3 class="agent-name">Robert Garcia</h3>
+                        <p class="agent-title">First-time Buyer Expert</p>
+                        <p>Robert specializes in helping young families find their starter homes.</p>
+                        <div class="agent-contact">
+                            <a href="#"><i class="fas fa-phone"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-img">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" alt="Amanda Smith">
+                    </div>
+                    <div class="agent-info">
+                        <h3 class="agent-name">Amanda Smith</h3>
+                        <p class="agent-title">Luxury Home Specialist</p>
+                        <p>Amanda's extensive network helps clients find exclusive high-end properties.</p>
+                        <div class="agent-contact">
+                            <a href="#"><i class="fas fa-phone"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Have questions or ready to start your property journey? Get in touch with our team today.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>3190 HW-160, Suite F, Parhump, Nevada 89048, United States</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>(206) 919-6886</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@marcihomes.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Business Hours</h3>
+                    <p>Monday - Sunday: 08:00 AM - 07:00 PM</p>
+                    <p>Open Daily 8:00 AM - 7:00 PM</p>
+                    <p>Appointments outside office hours available upon request. Just call!</p>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Location</h2>
+                    <p>Visit our office in Pahrump, Nevada</p>
+                </div>
+                <div class="map-container">
+                    <div id="map"></div>
+                    <div class="map-info">
+                        <h3> Marci Metzger - THE RIDGE REALTY GROUP</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+                        <p><i class="fas fa-phone"></i> (310) 555-1234</p>
+                        <p><i class="fas fa-envelope"></i> info@marcimetzgerhomes.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Marci Metzger Homes is a premier real estate agency specializing in high-end residential and commercial properties across the United States.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">Agents</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Property Types</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Houses</a></li>
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Villas</a></li>
+                        <li><a href="#">Condos</a></li>
+                        <li><a href="#">Commercial</a></li>
+                        <li><a href="#">Land</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest property listings and market updates.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © 2023 Marci Metzger Homes - All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
